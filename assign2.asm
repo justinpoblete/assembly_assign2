@@ -104,9 +104,10 @@ mov       rsi, thanks
 call      printf
 
 ;-------divide the two ints
+
 mov       rax, r15
 mov       rbx, r14
-
+cqo
 idiv      rbx
 mov       r13, rax    ;answer
 mov       r12, rdx    ;remainder
